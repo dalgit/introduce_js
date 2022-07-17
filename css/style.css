@@ -32,11 +32,44 @@ header {
     cursor: pointer;
 }
 
-.section1-container {
+/* -----------홈 화면 (페이지1)----------- */
+.home-container {
     width: 100vw;
     height: 100vh;
     background-color: #93B5C6;
+    display:flex;
 }
+
+.msg-box {
+    padding-left: 7rem;
+    padding-top: 15rem;
+    width:55%
+}
+
+.msg1 {
+    font-size: 3rem;
+}
+
+.msg2 {
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.img-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0rem;
+}
+
+.img {
+    width:550px;
+    height:550px;
+}
+
+
+
+
 
 .section2-container {
     width: 100vw;
