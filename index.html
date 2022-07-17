@@ -7,21 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>introduce</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="inner">
-            <div class="nav-container">
-                <div class="nav-list">Home</div>
-                <div class="nav-list">Me</div>
-                <div class="nav-list">Favorite</div>
-                <div class="nav-list">Gallery</div>
-            </div>
+            <ul class="nav-container">
+                <li data-link="#sec1">Home</a></li>
+                <li data-link="#sec2">Me</li>
+                <li data-link="#sec3">Favorite</li>
+                <li data-link="#sec4">Gallery</li>
+            </ul>
         </div>
     </header>
 
-    <section>
+    <section id="sec1">
         <div class="inner">
             <div class="home-container">
                 <div class="msg-box">
@@ -29,29 +30,59 @@
                     <div class="msg2">신입 개발자 문준기입니다</div>
                 </div>
                 <div class="img-box">
-                    <img class="img"
-                        src="C:\Users\junki\Documents\introduce_js\img\me2.jpg"
-                        alt="나" />
+                    <img class="img" src="img\me2.jpg" alt="나" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sec2">
+        <div class="inner">
+            <div class="me-container">
+                <div class="motto-box">
+                    <div class="motto-msg-box">
+                        <div class="motto-msg1">임시 메시지1</div>
+                        <div class="motto-msg2"> 최선을 다하겠습니다</div>
+                    </div>
+                </div>
+                <div class="info-container">
+
+                    <div class="stack-box">
+                        <div class="stack-msg">
+                            Stack
+                        </div>
+                        <div class="stack-img">
+                            <img class="img" src="img\html.png" />
+                            <img class="img" src="img\css.png" />
+                            <img class="img" src="img\javascript.png" />
+                            <img class="img" src="img\react.png" />
+                        </div>
+                    </div>
+                    
+                    <div class="my-box">
+                        <div>
+                            깃&벨로그
+                        </div>
+                        <div>
+                            <img class="img" src="img\git.png" />
+                            <img class="img" src="img\velog.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="inner">
-            <div class="section2-container">
-            </div>
-        </div>
-    </section>
-
-    <section>
+    <section id="sec3">
         <div class="inner">
             <div class="section3-container">
+                여긴섹션3
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="sec4">
         <div class="inner">
             <div class="section4-container">
             </div>

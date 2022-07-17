@@ -26,9 +26,10 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    list-style: none;
 }
 
-.nav-list {
+.nav-container li {
     cursor: pointer;
 }
 
@@ -36,55 +37,108 @@ header {
 .home-container {
     width: 100vw;
     height: 100vh;
-    background-color: #93B5C6;
+    background-color: #FFF9CA;
     display:flex;
 }
 
-.msg-box {
+.home-container .msg-box {
     padding-left: 7rem;
     padding-top: 15rem;
     width:55%
 }
 
-.msg1 {
+.home-container .msg1 {
     font-size: 3rem;
 }
 
-.msg2 {
+.home-container .msg2 {
     padding-top: 2rem;
     font-size: 2rem;
 }
 
-.img-box{
+.home-container .img-box{
     display:flex;
     justify-content: center;
     align-items: center;
     padding-right: 0rem;
 }
 
-.img {
+.home-container .img {
     width:550px;
     height:550px;
 }
+/* -------------------------------------- */
 
 
 
-
-
-.section2-container {
+/* -----------Me 화면 (페이지2)----------- */
+.me-container {
     width: 100vw;
     height: 100vh;
-    background-color: #C9CCD5;
+    background-color: #FFDEB4;
+    display:flex;
 }
 
+.motto-box{
+    width:55%;
+}
+
+.motto-msg-box{
+    padding-top:20%;
+    padding-left:20%;
+}
+
+.motto-msg1{
+    border-radius: 2px;
+    font-size:25px;
+}
+.motto-msg2{
+    font-size:35px;
+}
+
+.info-container{
+
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+.stack-box{
+    display:flex; 
+    flex-direction: column;
+}
+
+.my-box{
+    padding-top:2rem;
+    display:flex; 
+    flex-direction: column;
+}
+
+.stack-box .img {
+    width:100;
+    height:100px;
+}
+
+.my-box .img {
+    width:100;
+    height:100px;
+}
+
+
+/* -------------------------------------- */
 .section3-container {
     width: 100vw;
     height: 100vh;
-    background-color: #E4D8DC;
+    background-color: #FFB4B4;
 }
 
 .section4-container {
     width: 100vw;
     height: 100vh;
-    background-color: #FFE3E3;
+    background-color: #B2A4FF;
+}
+
+
+
+html{
+	scroll-behavior: smooth;
 }
