@@ -66,6 +66,7 @@ header {
 .home-container .img {
     width:550px;
     height:550px;
+    border-radius: 12px;
 }
 /* -------------------------------------- */
 
@@ -125,20 +126,110 @@ header {
 
 
 /* -------------------------------------- */
-.section3-container {
+.favorite-container {
     width: 100vw;
     height: 100vh;
     background-color: #FFB4B4;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+
+
+.slide-container{
+    width:780px;
+    overflow: hidden; 
+}
+
+.favorite-list {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding:0;
+
+  }
+
+  .favorite-card {
+    width: 240px;
+    border-radius: 8px;
+    margin: 0 10px;
+    transition: 0.4s;
+    /* IE11 에서는 flex 설정시, 디폴트로 flex 아이템들에 고정 너비를 무시 */
+  }
+
+  .favorite-image {
+    max-width: 240px;
+    /* border-radius: 블럭 모서리를 둥글게 하는 CSS 기능
+       top-left | top-right | bottom-right | bottom-left */
+    border-radius: 8px;
+  }
+
+
+  .arrow-container {
+    padding: 1rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-prev {
+  font-size: 2rem;
+  cursor: pointer;
+  padding:20px;
+  color: rgb(47, 48, 89);
+}
+
+.slide-prev-hover:hover {
+    transition: transform 0.5s;
+    transform: translateX(-2px);
+  }
+
+.slide-next {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #cfd8dc;
+}
+
+.slide-next-hover:hover {
+    transition: transform 0.5s;
+    transform: translateX(2px);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section4-container {
     width: 100vw;
     height: 100vh;
     background-color: #B2A4FF;
 }
-
-
-
 html{
 	scroll-behavior: smooth;
 }
+
+
+
+
+
+
+
